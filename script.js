@@ -1,14 +1,17 @@
-/*checks to see if element is in view */
-document.addEventListener('DOMContentLoaded', () => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    });
+// Select the .airplane-banner and #airplane elements
+const airplaneBanner = document.querySelector('.airplane-banner');
+const airplane = document.querySelector('#airplane');
 
-    document.querySelectorAll('.rectangle').forEach(rectangle => { // make rectangles visible once they are in viewport
-        observer.observe(rectangle);
-    });
-});
+// Create the IntersectionObserver
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      airplaneBanner.classList.add('visible');  // Add visible class to banner
+      airplane.classList.add('visible');        // Add visible class to airplane
+      observer.unobserve(entry.target);         // Stop observing once animation starts
+    }
+  });
+}, { threshold: 0.1 }); 
+
+// Start observing the .airplane-banner
+observer.observe(airplaneBanner);

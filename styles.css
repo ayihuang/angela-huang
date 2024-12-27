@@ -20,6 +20,7 @@ h1{
 h2{
     margin-top: 0;
     padding-top: 10px;
+    font-size:30px;
 }
 .head{
     background-color: rgb(47, 158, 248);
@@ -127,7 +128,30 @@ h2{
 .banner{
     background-color: antiquewhite;
     height:1000px;
-    width:400px;
+    width:80%;
     display:block;
     margin:auto
+}
+.airplane-banner{
+    position:relative;
+    opacity: 0;
+    transform: translateY(400px);
+    transition: all 1s ease-out;
+}
+.airplane-banner.visible{
+    opacity:1;
+    transform: translateY(-250px);
+}
+#airplane.visible{
+    animation: plane 1s linear 1s forwards;
+}
+@keyframes plane{
+    0%{
+        opacity:1;
+    }
+    100%
+    {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
 }
