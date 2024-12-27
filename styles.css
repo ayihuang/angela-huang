@@ -14,6 +14,10 @@ body {
     height: 100vh;
     overflow-x: hidden;
 }
+a{
+    text-decoration: none;
+    color:black;
+}
 h1{
     font-size: 40px;
 }
@@ -21,6 +25,11 @@ h2{
     margin-top: 0;
     padding-top: 10px;
     font-size:30px;
+}
+h3{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
 }
 .head{
     background-color: rgb(47, 158, 248);
@@ -45,13 +54,13 @@ h2{
     position: absolute;
     top: 0;                   
     right: 0;                  
-    animation: cloud1 1s linear forwards;
+    animation: cloud1 2s linear forwards;
 }
 #cloud2{
     position: absolute;
     top: 0;                   
     left: 0;                  
-    animation: cloud2 1s linear forwards;
+    animation: cloud2 2s linear forwards;
 }
 #cloud3{
     position: absolute;
@@ -127,7 +136,6 @@ h2{
 }
 .banner{
     background-color: antiquewhite;
-    height:1000px;
     width:80%;
     display:block;
     margin:auto
@@ -154,4 +162,9 @@ h2{
         transform: translateY(-500px);
         opacity: 0;
     }
+}
+#beach-image{
+    position: absolute; /* Use absolute positioning */
+    right: 0;           /* Align to the right edge */
+    
 }
