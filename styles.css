@@ -201,3 +201,19 @@ h3{
         max-width: 300px;
     }
 }
+.experiences{
+    position: relative;
+}
+.experience{
+    padding-left: 10vw;
+    text-align: left;
+    color:rgb(255, 255, 255);
+    position:absolute;
+    z-index: 4;
+}
+@media (max-width: 800px)
+{
+    .experience{
+        padding-left:5vw;
+    }
+}
