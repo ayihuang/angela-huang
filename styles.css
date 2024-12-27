@@ -1,0 +1,133 @@
+.html{
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    background: rgb(47, 158, 248);
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0px;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    margin-top: 0;
+    padding-top: 10px;
+}
+.head{
+    background-color: rgb(47, 158, 248);
+    height: 100vh;
+    position: relative;
+}
+#intro-text{
+    transform: translateY(50vh);
+    text-align: center;
+}
+
+.clouds
+{
+    position: absolute;    
+    top: 40vh;                
+    width:100%;                   
+    display: flex;                  
+    justify-content: center;         
+    align-items: center;             
+}
+#cloud1{
+    position: absolute;
+    top: 0;                   
+    right: 0;                  
+    animation: cloud1 1s linear forwards;
+}
+#cloud2{
+    position: absolute;
+    top: 0;                   
+    left: 0;                  
+    animation: cloud2 1s linear forwards;
+}
+#cloud3{
+    position: absolute;
+    top: 0;                   
+    left: 0;                  
+    animation: cloud3 10s linear infinite;
+}
+#cloud4{
+    transform: translateY(65vh);
+    position:absolute;
+    animation: cloud4 10s linear infinite;
+}
+@keyframes cloud1{
+    0%{
+        right: 50%;
+        opacity: 1;
+    }
+    100%
+    {
+        right: 100%;
+        opacity:0;
+    }
+}
+@keyframes cloud2{
+    0%{
+        left: 50%;
+        opacity:1;
+    }
+    100%
+    {
+        left: 100%;
+        opacity: 0;
+    }
+}
+@keyframes cloud3{
+    0%{
+        left: 0;
+        opacity:0;
+    }
+    10%{
+        opacity:0.5;
+    }
+    25%{
+        opacity: 1;
+    }
+    100%
+    {
+        left: 100%;
+        opacity: 0;
+    }
+}
+@keyframes cloud4{
+    0%{
+        right: 0;
+        opacity:0;
+    }
+    10%{
+        opacity:0.5;
+    }
+    25%{
+        opacity: 1;
+    }
+    100%
+    {
+        right: 100%;
+        opacity: 0;
+    }
+}
+.projects{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.banner{
+    background-color: antiquewhite;
+    height:1000px;
+    width:400px;
+    display:block;
+    margin:auto
+}
