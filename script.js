@@ -11,7 +11,7 @@ const observer = new IntersectionObserver((entries, observer) => {
       observer.unobserve(entry.target);         // Stop observing once animation starts
     }
   });
-}, { threshold: 0.05 }); 
+}, { threshold: 0.01}); 
 
 // Start observing the .airplane-banner
 observer.observe(airplaneBanner);

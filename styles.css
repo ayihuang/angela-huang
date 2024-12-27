@@ -27,8 +27,8 @@ h2{
     font-size:30px;
 }
 h3{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-bottom: 50px;
 }
 .head{
@@ -144,14 +144,14 @@ h3{
     position:relative;
     opacity: 0;
     transform: translateY(400px);
-    transition: all 1s ease-out;
+    transition: all 0.7s ease-out;
 }
 .airplane-banner.visible{
     opacity:1;
     transform: translateY(-250px);
 }
 #airplane.visible{
-    animation: plane 1s linear 1s forwards;
+    animation: plane 1s linear 0.5s forwards;
 }
 @keyframes plane{
     0%{
@@ -166,5 +166,38 @@ h3{
 #beach-image{
     position: absolute; /* Use absolute positioning */
     right: 0;           /* Align to the right edge */
-    
+
+}
+@media (max-width: 1000px)
+{
+    h3{
+        padding-left: 200px;
+        padding-right:200px;
+    }
+}
+@media (max-width: 900px)
+{
+    .project-photo{
+        max-width: 400px;
+    }
+    h3{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #beach-image{
+        max-width: 500px;
+    }
+}
+@media (max-width: 550px)
+{
+    .project-photo{
+        max-width: 256px;
+    }
+    h3{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #beach-image{
+        max-width: 300px;
+    }
 }
