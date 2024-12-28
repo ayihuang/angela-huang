@@ -172,8 +172,9 @@ h4{
 #beach-image{
  
     margin-left:auto;          /* Align to the right edge */
-    transform: translateY(-100px);
+
     display:block;
+    z-index: -1;
 }
 .experience{
     padding-left: 10vw;
@@ -183,13 +184,11 @@ h4{
     z-index: 999;
 }
 
-
 section{
     position: relative;
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     overflow:hidden;
-    transform:translateY(-225px);
 }
 section .wave{
     position: absolute;
@@ -252,19 +251,22 @@ section .wave.wave4{
     }
 }
 .skills{
-    background-color: rgb(38,221,221);
+   margin-top:-100px;
 }
-@media (max-width:1200px)
+.skill-section{
+    background-color: rgb(38, 221, 221);
+    z-index: 9999;
+}
+#skills-header{
+    margin:0;
+}
+@media(max-width:1300px)
 {
-    #beach-image{
-        transform: translateY(-50px);
+    h3{
+        padding-left: 50px;
+        padding-right:50px;
     }
-    section{
-        transform: translateY(-150px);
-    }
-
-}
-  
+}  
 @media (max-width: 1000px)
 {
     h3{
@@ -306,7 +308,5 @@ section .wave.wave4{
         float: none; /* Prevent any floating behavior */
         clear: both; /* Clear any floats from earlier elements */
     }
-    section{
-        transform:translateY(-140px);
-    }
+
 }
