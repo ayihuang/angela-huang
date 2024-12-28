@@ -211,21 +211,21 @@ section .wave.wave1{
 section .wave.wave2{
     animation: animate2 15s linear infinite;
     z-index: 999;
-    opacity: 0.5;
+    opacity: 0.7;
     animation-delay: -5s;
     bottom: 10px;
 }
 section .wave.wave3{
     animation: animate 30s linear infinite;
     z-index: 998;
-    opacity: 0.2;
+    opacity: 0.5;
     animation-delay: -2s;
     bottom: 15;
 }
 section .wave.wave4{
     animation: animate2 5s linear infinite;
     z-index: 997;
-    opacity: 0.7;
+    opacity: 0.9;
     animation-delay: -5s;
     bottom: 20;
 }
@@ -251,10 +251,16 @@ section .wave.wave4{
         background-position-x: -1000px;
     }
 }
+.skills{
+    background-color: rgb(38,221,221);
+}
 @media (max-width:1200px)
 {
     #beach-image{
         transform: translateY(-50px);
+    }
+    section{
+        transform: translateY(-150px);
     }
 
 }
@@ -299,5 +305,8 @@ section .wave.wave4{
         max-width: 300px;
         float: none; /* Prevent any floating behavior */
         clear: both; /* Clear any floats from earlier elements */
+    }
+    section{
+        transform:translateY(-140px);
     }
 }
