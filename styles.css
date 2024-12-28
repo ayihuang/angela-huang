@@ -267,7 +267,8 @@ section .wave.wave4{
 }
 .about-me{
     padding-left: 10%;
-    padding-right:10%
+    padding-right:10%;
+    text-align: left;
 }
 @media(max-width:1300px)
 {
