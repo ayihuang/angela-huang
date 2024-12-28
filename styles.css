@@ -20,6 +20,7 @@ a{
 }
 h1{
     font-size: 40px;
+    margin: 0;
 }
 h2{
     margin-top: 0;
@@ -31,6 +32,7 @@ h3{
     padding-right: 100px;
     padding-bottom: 50px;
     font-family: Verdana, sans-serif;
+    margin:0;
 }
 h4{
     font-family: Verdana, sans-serif;
@@ -259,6 +261,13 @@ section .wave.wave4{
 }
 #skills-header{
     margin:0;
+}
+.about{
+    background-color: rgb(38, 221, 221);
+}
+.about-me{
+    padding-left: 10%;
+    padding-right:10%
 }
 @media(max-width:1300px)
 {
