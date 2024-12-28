@@ -30,7 +30,12 @@ h3{
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 50px;
+    font-family: Verdana, sans-serif;
 }
+h4{
+    font-family: Verdana, sans-serif;
+}
+
 .head{
     background-color: rgb(47, 158, 248);
     height: 100vh;
@@ -166,13 +171,31 @@ h3{
 #beach-image{
     position: absolute; /* Use absolute positioning */
     right: 0;           /* Align to the right edge */
+    transform: translateY(-100px);
+}
+.experience{
+    padding-left: 10vw;
+    text-align: left;
+    color:rgb(255, 255, 255);
+    padding-right:50px;
+    z-index: 999;
+}
+@media (max-width:1200px)
+{
+    #beach-image{
+        transform: translateY(-50px);
+    }
 
 }
+  
 @media (max-width: 1000px)
 {
     h3{
         padding-left: 200px;
         padding-right:200px;
+    }
+    #beach-image{
+        max-width: 500px;
     }
 }
 @media (max-width: 900px)
@@ -184,10 +207,14 @@ h3{
         padding-left: 50px;
         padding-right: 50px;
     }
-    #beach-image{
-        max-width: 500px;
+}
+@media (max-width: 800px)
+{
+    .experience{
+        padding-left:5vw;
     }
 }
+
 @media (max-width: 550px)
 {
     .project-photo{
@@ -201,19 +228,5 @@ h3{
         max-width: 300px;
     }
 }
-.experiences{
-    position: relative;
-}
-.experience{
-    padding-left: 10vw;
-    text-align: left;
-    color:rgb(255, 255, 255);
-    position:absolute;
-    z-index: 4;
-}
-@media (max-width: 800px)
-{
-    .experience{
-        padding-left:5vw;
-    }
-}
+
+
