@@ -285,6 +285,13 @@ section .wave.wave4{
     padding-right:10%;
     text-align: left;
 }
+.connect
+{
+    background-color: rgb(228, 216, 147);
+}
+#varsity-photo{
+    animation: imageBob 5s infinite;
+}
 @keyframes blueFish
 {
     0%{
@@ -304,8 +311,29 @@ section .wave.wave4{
     }
     100%{
         right: 100%;
-        bottom: 6%
+        bottom: 20%
     }
+}
+@keyframes imageBob{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+.name-link{ /*name with linked in link beside it*/
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+#linkedin-logo
+{
+    transform: translateY(-6px);
 }
 @media(max-width:1300px)
 {
