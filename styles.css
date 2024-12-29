@@ -33,9 +33,11 @@ h3{
     padding-bottom: 50px;
     font-family: Verdana, sans-serif;
     margin:0;
+    z-index: 999;
 }
 h4{
     font-family: Verdana, sans-serif;
+    z-index: 9999;
 }
 
 .head{
@@ -254,10 +256,23 @@ section .wave.wave4{
 }
 .skills{
    margin-top:-100px;
+   position: relative;
 }
 .skill-section{
     background-color: rgb(38, 221, 221);
     z-index: 9999;
+}
+#blue-fish{
+    position: absolute;
+    animation: blueFish 10s linear infinite;
+    opacity: 0.5; 
+    z-index: 1;
+}
+#yellow-fish{
+    position: absolute;
+    animation: yellowFish 12s linear 1s infinite;
+    opacity:0.5;
+    z-index: 1;
 }
 #skills-header{
     margin:0;
@@ -269,6 +284,28 @@ section .wave.wave4{
     padding-left: 10%;
     padding-right:10%;
     text-align: left;
+}
+@keyframes blueFish
+{
+    0%{
+       left:0%;
+       bottom: 0%;
+    }
+    100%{
+        left: 100%;
+        bottom: 40%
+    }
+}
+@keyframes yellowFish
+{
+    0%{
+       right:0%;
+       bottom: 0%;
+    }
+    100%{
+        right: 100%;
+        bottom: 6%
+    }
 }
 @media(max-width:1300px)
 {
