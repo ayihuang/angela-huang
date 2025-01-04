@@ -6,17 +6,55 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="/favicon.png" type="image/png">
 </head>
+<div class="wrapper">
 <body>
+    <div class="navigation" id="header">
+        <div class ="sidebar">
+            <ul class="nav" class = "headNav">
+                <li onclick= hideSidebar()><a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#D9D9D9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#project-section">Projects</a></li>
+                <li><a href="#experience-section">Experience</a></li>
+                <li><a href="#skills-section">Skills</a></li>
+                <li><a href="#about-section">About Me</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </div>
+            <a href="https://ayihuang.github.io/">
+                <img id="skatelligenceLogoImg" src="Skatelligence logo black.png" alt="Skatelligence full logo" style="width: 250px; height: 50px" />
+            </a>
+            <ul class="nav">
+                <div class="hideOnMobile">
+                    <li><a href="#project-section">Projects</a></li>
+                    <li><a href="#experience-section">Experience</a></li>
+                    <li><a href="#skills-section">Skills</a></li>
+                    <li><a href="#about-section">About Me</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                </div>
+                <div class="menu-button">
+                <li  onClick= showSidebar()><a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </div>
+            </ul>
+        </div>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                 const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
     <div class = "head">
         <h1 id ="intro-text">Hi, I'm Angela!</h1>
         <div class = "clouds">
-            <img id = "cloud1" src="clouds.webp" style="width: 400"/>
-            <img id = "cloud2" src="clouds.webp" style="width: 400"/>
+            <img id = "cloud1" src="clouds.webp" style="width: 300"/>
+            <img id = "cloud2" src="clouds.webp" style="width: 300"/>
         </div>
-        <img id = "cloud3" src="clouds.webp" style="width: 350"/>
-        <img id = "cloud4" src="clouds.webp" style="width: 350"/>
+        <img id = "cloud3" src="clouds.webp" style="width: 300"/>
+        <img id = "cloud4" src="clouds.webp" style="width: 300"/>
     </div>
-    <div class = "projects">
+    <div class = "projects" id="project-section">
         <h1 id="project-h1-text">These are Some of my Projects</h1>
         <div class ="airplane-banner">
             <img id = "airplane" src="Airplane.png" style="width: 400"/>
@@ -24,13 +62,13 @@
                 <a href="https://Skatelligence.ca">
                 <div class="project">
                 <h2>Skatelligence</h2>
-                <img class="project-photo" id = "skatelligence-photo" src="Skatelligence_Full.jpg" style="width:600"/>
+                <img class="project-photo" id = "skatelligence-photo" src="Skatelligence_Full.jpg" style="width:500"/>
                 <h3 class = "project-description">Skatelligence is an AI powered high-performance training tool for figure skaters. Using IMUs mounted to the skater's body, Skatelligence is able to detect and categorize the jumps they perform, and provide valuable insights into their performance. </h4>
                 </a>
                 <a href="https://keyflow-assist.vercel.app/">
                     <div class="project">
                     <h2>Keyflow Assist</h2>
-                    <img  class="project-photo"  id = "keyflow-photo" src="Device Picture.jpg" style="width:600"/>
+                    <img  class="project-photo"  id = "keyflow-photo" src="Device Picture.jpg" style="width:500"/>
                     <h3 class = "project-description">Individuals with cerebral palsy (CP) struggle to control their hands and arms for precise movements. Playing the piano as physical therapy can help improve these skills. However, weak upper body muscles in CP patients make it difficult.
                         To solve this issue, we designed a device to make piano-focused physical therapy possible for people with CP.
                     </h3>
@@ -38,7 +76,7 @@
                 <a href="https://keyflow-assist.vercel.app/">
                     <div class="project">
                     <h2>Woodpecker Toy</h2>
-                    <img class="project-photo" id = "puzzle-photo" src="puzzle project.jpg" style="width:600"/>
+                    <img class="project-photo" id = "puzzle-photo" src="puzzle project.jpg" style="width:500"/>
                     <h3 class = "project-description">The woodpecker toy is a 3D printed mechanical toy featuring a woodpecker that pecks on a tree with a push of a button. It designed this project with SolidWorks.
                     </h3>
                 </a>
@@ -55,7 +93,7 @@
         <script src="script.js"></script>
     </div>
     </div>
-        <div class = "experiences">
+        <div class = "experiences" id="experience-section">
             <h1 id = "experience-title">And Here are my Experiences.</h1>
             <div class = "experience">
                 <h2 class="biotec-experience">Marketing Lead: Biotechnology and Bioengineering Conference</h2>
@@ -78,7 +116,7 @@
             </div>
             <img id = "beach-image" src="Beach.png" style = "width:850"/>
         </div>
-        <div class = "skills">
+        <div class = "skills" id ="skills-section">
             <section>
                 <div class = "wave wave1"></div>
                 <div class = "wave wave2"></div>
@@ -93,7 +131,7 @@
             <img id ="blue-fish" src="blue fish.webp" style="width:100"/>
             <img id ="yellow-fish" src="yellow fish.png" style="width:100"/>
         </div>
-        <div class="about">
+        <div class="about" id="about-section">
             <div>
             <h1>A Bit More About Me</h1>
             <h4 class="about-me">I'm a first-year Biomedical Engineering student at the University of Waterloo. I'm passionate about leveraging technology to create solutions that 
@@ -108,7 +146,7 @@
         </div>
         <img id="sand1" src="Sand1.png" style="width:300"/>
         </div>
-        <div class="connect">
+        <div class="connect" id = "contact-section">
             <h1 id="connect-text">Let's Talk!</h1>
             <div class="name-link">
                 <iframe src=" "width="30%" height="400px">
@@ -126,3 +164,4 @@
         </div>
   
 </body>
+</div>

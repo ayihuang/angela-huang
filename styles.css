@@ -2,6 +2,7 @@
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -15,18 +16,24 @@ body {
     height: 100vh;
     overflow-x: hidden;
 }
+.wrapper{
+    overflow-x: hidden;
+}
 a{
     text-decoration: none;
     color:black;
 }
+
 h1{
     font-size: 40px;
     margin: 0;
+    
 }
 h2{
     margin-top: 0;
     padding-top: 10px;
-    font-size:30px;
+    font-size:35px;
+    font-family: Verdana, sans-serif;
 }
 h3{
     padding-left: 100px;
@@ -35,12 +42,79 @@ h3{
     font-family: Verdana, sans-serif;
     margin:0;
     z-index: 999;
+    line-height: 1.5;
 }
 h4{
     font-family: Verdana, sans-serif;
     z-index: 9999;
 }
+.nav li {
+    display: inline-block;
+    align-items: center;
+    font-size: 14px;
+    margin-left: 0px; /* Adjust spacing as needed */   
+}
+.sidebar li{
+    margin-bottom: 60px;
+}
 
+.headNav a{
+    color: white;
+}
+.headNav a:visited{
+    color:rgb(0, 0, 0)
+}
+.nav a{
+    padding: 24px 15px 24px 15px;
+    height:100%;
+}
+
+.nav li :hover{
+    background-color:rgb(40, 137, 216);
+}
+
+#header {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0; /* Optional padding for content inside header */
+    box-sizing: border-box;
+    background-color: rgb(47, 158, 248);
+}
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px;
+    color: white;
+    font-family: Verdana, sans-serif;
+    justify-content: flex-start;
+    box-shadow: -5px 0 5px rgba(0, 0, 0.1);
+    position: fixed;
+    z-index: 999;
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    width: 250px;
+    backdrop-filter: blur(10px);
+    z-index: 11;
+    background-color: rgb(47, 158, 248);
+    box-shadow: -10px 0 10px rgb(35, 122, 194);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width:100%;
+}
+
+.sidebar a{
+    width:100%;
+}
 .head{
     background-color: rgb(47, 158, 248);
     height: 100vh;
@@ -153,7 +227,7 @@ h4{
     padding-top: 20px;
 }
 .banner{
-    background-color: antiquewhite;
+    background-color: rgb(247, 247, 247);
     width:80%;
     display:block;
     margin:auto
@@ -408,4 +482,28 @@ section .wave.wave4{
         clear: both; /* Clear any floats from earlier elements */
     }
 
+}
+@media (max-width: 861px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media (max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+@media (min-width: 862px){
+    .menu-button{
+        display: none;
+    }
+}
+
+.menu-button{
+    height: 100%;
+    transform: translateY(-4px);
 }
