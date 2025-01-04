@@ -27,7 +27,7 @@ a{
 h1{
     font-size: 40px;
     margin: 0;
-    
+    text-align: center;
 }
 h2{
     margin-top: 0;
@@ -47,6 +47,8 @@ h3{
 h4{
     font-family: Verdana, sans-serif;
     z-index: 9999;
+    line-height: 1.5;
+    margin: 0;
 }
 .nav li {
     display: inline-block;
@@ -90,7 +92,7 @@ h4{
     justify-content: flex-start;
     box-shadow: -5px 0 5px rgba(0, 0, 0.1);
     position: fixed;
-    z-index: 999;
+    z-index: 9999999;
 }
 .sidebar{
     position: fixed;
@@ -218,10 +220,24 @@ h4{
     justify-content: center;
     text-align: center;
 }
+.project-photo{
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
 #project-h1-text{
     padding-left: 40px;
     padding-right: 40px;
 
+}
+.project{
+    border: 2px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Adds space between content and border */
+    margin: 20px; /* Adds space between projects */
+    background-color: #f9f9f9; /* Optional: light background for contrast */
+}
+.project:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Optional: subtle shadow for a professional look */
 }
 .project-description{
     padding-top: 20px;
@@ -235,15 +251,17 @@ h4{
 .airplane-banner{
     position:relative;
     opacity: 0;
-    transform: translateY(400px);
     transition: all 0.7s ease-out;
 }
 .airplane-banner.visible{
     opacity:1;
-    transform: translateY(0px);
+    transform: translateY(-100px);
 }
 #airplane.visible{
     animation: plane 1s linear 0.5s forwards;
+}
+.pad-projects{
+    height: 30px;
 }
 @keyframes plane{
     0%{
@@ -257,11 +275,16 @@ h4{
 }
 
 #beach-image{
- 
     margin-left:auto;          /* Align to the right edge */
-
     display:block;
     z-index: -1;
+}
+.experiences{
+    border: 2px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Adds space between content and border */
+    margin: 40px; /* Adds space between projects */
+    background-color: rgb(93, 182, 255);
 }
 .experience{
     padding-left: 10vw;
@@ -349,6 +372,7 @@ section .wave.wave4{
 .skill-section{
     background-color: rgb(38, 221, 221);
     z-index: 9999;
+    text-align: center;
 }
 #blue-fish{
     position: absolute;
@@ -376,6 +400,13 @@ section .wave.wave4{
     padding-right:10%;
     text-align: left;
     padding-bottom: 5%;
+    background-color: rgb(38, 221, 221);
+    border: 2px solid rgb(42, 230, 230);
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Adds space between content and border */
+    margin: 40px; /* Adds space between projects */
+    background-color: rgb(42, 230, 230);
+    box-shadow: 0 4px 6px rgba(25, 170, 170, 0.5); 
 }
 .connect
 {
@@ -383,6 +414,8 @@ section .wave.wave4{
 }
 #varsity-photo{
     animation: imageBob 5s infinite;
+    display: block;
+    margin: auto;
 }
 @keyframes blueFish
 {
@@ -443,8 +476,8 @@ section .wave.wave4{
 @media (max-width: 1000px)
 {
     h3{
-        padding-left: 200px;
-        padding-right:200px;
+        padding-left: 20px;
+        padding-right:20px;
     }
     #beach-image{
         max-width: 500px;
