@@ -235,7 +235,7 @@ h4{
     padding: 20px; /* Adds space between content and border */
     margin: auto;
     background-color: #f9f9f9; /* Optional: light background for contrast */
-    height: 500px;
+    height: 400px;
     width: 300px;
 
 }
@@ -248,13 +248,13 @@ h4{
 }
 .banner{
     background-color: rgb(233, 236, 236);
-    width:80%;
+
     display:flex;
     flex-wrap: wrap;
     margin:auto;
     align-content: center;
     justify-content: center;
-    border-radius: 20px;;
+    border-radius: 20px;
 }
 .airplane-banner{
     position:relative;
