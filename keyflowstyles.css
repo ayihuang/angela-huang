@@ -135,8 +135,11 @@ a{
 }
 .title{
     background-color: #d8e2e7;
+    padding-top: 80px;
+    padding-bottom: 20px;
 }
 .summary{
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,26 +160,40 @@ a{
 #testing-picture{
     padding-left: 5%;
 }
-.future{
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    margin-left:5%;
-    margin-right: 5%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
+.padder{
+    height: 7%;
 }
 .top-triangle{
     width:0;
     height: 0;
     border-left: 100vw solid transparent;
-    border-bottom: 7vw solid #45288a;
+    border-bottom: 2vw solid #e1d5fa;
 }
 .bottom-triangle{
     width:0;
     height: 0;
     border-right: 100vw solid transparent;
-    border-top: 7vw solid #45288a;
+    border-top: 2vw solid #e1d5fa;
+}
+.goal{
+    background-color: #e1d5fa;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.project-context{
+    display: flex;   
+}
+#piano-picture{
+    float: right;
+}
+#concept-sketch{
+    float:left;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+.prototype-section{
+    background-color: #e1d5fa;
 }
 @media (max-width: 1060px){
     .hideOnMobile{
