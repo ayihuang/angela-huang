@@ -21,7 +21,6 @@ h1{
     margin: 0;
     text-align: center;
     font-family: Verdana, sans-serif;
-    padding-top: 20vh;
 }
 h2{
     margin-top: 0;
@@ -43,6 +42,7 @@ h4{
     line-height: 1.5;
     margin: 0;
     padding-left: 5%;
+    padding-right: 5%;
 }
 a{
     text-decoration: none;
@@ -115,6 +115,9 @@ a{
 .sidebar a{
     width:100%;
 }
+.main-body{
+    background-color: white;
+}
 .title-image{
     background-image: url('using\ device.jpg');
     display: flex;
@@ -128,19 +131,53 @@ a{
 .intro-text{
     display:block;
     text-align: center;
-    background-color: #ffffff;
     margin-top: 0;
 }
 .title{
     background-color: #d8e2e7;
 }
 .summary{
-    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+#using-device{
+    border-radius: 15px;;
+}
+.summary2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 50px;
+}
+#testing-picture{
+    padding-left: 5%;
+}
+.future{
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    margin-left:5%;
+    margin-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.top-triangle{
+    width:0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 7vw solid #45288a;
+}
+.bottom-triangle{
+    width:0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-top: 7vw solid #45288a;
+}
 @media (max-width: 1060px){
     .hideOnMobile{
         display: none;
@@ -151,6 +188,9 @@ a{
     #using-device{
         max-width: 400px;
     }
+    #testing-picture{
+        max-width: 400px;
+    }
 }
 @media(max-width: 800px)
 {
@@ -159,7 +199,17 @@ a{
         justify-content: center;
         align-items: center;
     }
+    .summary2{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
     #using-device{
+        max-width: 320px;
+        display:block;
+        margin: auto;
+    }
+    #testing-picture{
         max-width: 320px;
         display:block;
         margin: auto;
