@@ -18,12 +18,17 @@ body {
 }
 p{
     font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-left:5%;
+    padding-right: 5%;
 }
 h1{
     font-size: 40px;
     margin: 0;
     text-align: center;
     font-family: Verdana, sans-serif;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 h2{
     margin-top: 0;
@@ -33,11 +38,14 @@ h2{
     text-align: center;
 }
 h3{
-    text-align: center;
+    text-align: left;
     font-family: Verdana, sans-serif;
     margin:0;
     z-index: 999;
     line-height: 1.5;
+    padding-left: 5%;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 h4{
     font-family: Verdana, sans-serif;
@@ -198,6 +206,23 @@ a{
 .prototype-section{
     background-color: #e1d5fa;
 }
+#fbd-external{
+    display: block;
+    margin: auto;
+}
+#fbd-arm{
+    display: block;
+    margin: auto;
+}
+.free-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.matlab-graphs{
+    display: block;
+    margin: auto;
+}
 @media (max-width: 1060px){
     .hideOnMobile{
         display: none;
@@ -234,11 +259,27 @@ a{
         display:block;
         margin: auto;
     }
+    #fbd-external{
+        max-width: 320px;
+    }
+    #fbd-arm{
+        max-width: 320px;
+    }
+    .free-body{
+        display:block;
+    }
+    .matlab-graphs{
+        max-width: 320px;
+    }
+    .matlab-section{
+        display:block;
+    }
 }
-@media (max-width: 400px){
+@media (max-width: 400px)
+{
     .sidebar{
         width: 100%;
-    }
+    }  .
 }
 
 @media (min-width: 1061px){

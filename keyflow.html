@@ -146,16 +146,100 @@ use and set up, comfortable to use, and durable.
         The straight-line path between the elbow and shoulder joint is parallel to the y-axis.    
     </h4>
     <h3>Free Body Diagrams</h3>
-    <img id="fbd-external" src="fbd-external.png" style="width: 600px"/>
-    <img id="fbd-arm" src="fbd-arm.png" style="width: 600px"/>
+    <div class ="free-body">
+        <img id="fbd-external" src="fbd-external.png" style="width: 400px"/>
+        <img id="fbd-arm" src="fbd-arm.png" style="width: 600px"/>
+    </div>
     <h3>
         Conclusion and Interpretation of Results
     </h3>
     <h4>
         The force relieved from the arm muscles and joints when using our railing device is 10.90 [N], leaving the shoulder joint and elbow joint to experience 21.8 [N] and 3.04 [N] of force respectively. On the other hand, the upper arm muscles experience no tension forces while using this device.  To objectively measure the effectiveness of the railing device, we must compare the forces the joints and muscles experience while the stakeholder is using the device to an identical scenario where the stakeholder is not. In the device’s absence, it is calculated that the force the shoulder joint and elbow joint experiences increases to 32.7 [N] and -35.9 [N] respectively, while muscle force tension increases from 0 [N] to 50.4 [N]. In other words, the device reduces shoulder strain by 50%, reduces elbow strain by nearly 12 times, and ensures the upper arm muscles experience no forces. Therefore, it is sufficient to say that the railing device does indeed reduce muscle and joint strain by an adequate amount to be considered effective. 
     </h4>
-    <img class="matlab-graphs" src="load-relieved.png" style="width: 600px"/>
-    <p>The load relieved off the arm for different sponge support distances measured from the wrist joint. The point (4, 10.8954) indicates the load relieved is 10.90 [N] when the sponge support is 4.00 [cm] from the wrist joint. This force value aligns with the calculated.</p>
-    <img class="matlab-graphs" src="load-relieved.png" style="width: 600px"/>
+    <div class="matlab-section">
+        <div>
+            <img class="matlab-graphs" src="load-relieved.png" style="width: 600px"/>
+            <p>The load relieved off the arm for different sponge support distances measured from the wrist joint. The point (4, 10.8954) indicates the load relieved is 10.90 [N] when the sponge support is 4.00 [cm] from the wrist joint. This force value aligns with the calculated.</p>
+        </div>
+        <div>
+            <img class="matlab-graphs" src="force-distance.png" style="width: 600px"/>
+            <p>The shoulder joint force and the elbow joint force for different sponge support distances measured from the wrist joint. The points (4, 21.7657) and (4, 3.06255) indicate the shoulder experiences 21.77 [N] of force and the elbow joint experiences 3.06 [N] of force when the sponge support is 4.00 [cm] away from the wrist joint. These force values align with the calculated forces. </p>
+        </div>
+        <div>
+            <img class="matlab-graphs" src="force-wrist.png" style="width: 600px"/>
+        <p>
+            The sum of the magnitudes of the force experienced by the shoulder and elbow joints for different sponge support distances away measured from the wrist joint. 
+        </p>
+        </div>
+    </div>
+    <h4>
+        The max load to be relieved approaches infinity as the sponge support is moved closer to the elbow joint (as d approaches the forearm length). However, in hindsight, maximizing the relief load is not the best way to measure the device’s effectiveness, rather it is better to determine where the sponge support should be positioned so that the combined force experienced by the elbow and shoulder joint is minimized. This is achieved by expressing the sum of the magnitude of the shoulder and elbow joint forces as a function of the sponge support distance along the forearm measured from the wrist. From figure 8, the position of the sponge support position between 8.73 to 18.34 centimeters away from the wrist enables the shoulder and elbow joints to experience the lowest combined force possible of 18.703 [N], which is also the weight of the upper arm. However, the ability to play piano may decrease as the support is placed closer to the user’s body, therefore the user should place the sponge support at roughly 9 [cm] for maximum comfortability. 
+    </h4>
+    <h2>Testing</h2>
+    <img id="p-diagram" src="p diagram.png" style="max-width: 600px"/>
+    <h4>
+        Prior to testing, a P-Diagram analysis was conducted to identify design parameters that could influence the performance of the piano railing prototype [Figure 9]. Inputs for the test included the user's piano skills and the vertical and horizontal distances of the railing from the keys. To maximize user comfort, several design parameters were considered. Varied parameters include the distance of the railing to the piano and the height of the railing above the keys. These adjustments were expected to influence user posture and arm support during piano playing. Certain parameters were held constant to reduce errors in test data, such as padding material, sliding mechanism, and track type. While noise parameters such as arm length, seated height, and posture during testing were ignored, they could potentially introduce errors into the data. 
+        <br><br>Additionally, prior experience with the piano was measured and appeared to introduce some bias in the results, as participants with varying levels of experience with the piano reacted differently to the prototype. The quality of the design will be assessed based on user comfort, arm support, overall usability, and impact on playing. The target outcome is to achieve an average score of 4/5 on the Likert Scale for comfort and ensure that arm support and overall usability are effective (pass/fail). Additionally, as we chose to build a focused, low-fidelity prototype, our goal was to ensure that the prototype had no negative impact on playing. Ultimately, the objective of this test is to evaluate the comfort, support, usability, and impact of playing the piano railing prototype. Primarily, the focus is to analyze how variations in the distance of the railing from the piano affect user comfort.
+    </h4>
+    <h3>
+        Test Protocol
+    </h3>
+    <h4>
+        The testing process involved six participants selected based on similar physical characteristics but varying levels of experience with piano. Chosen participants were of similar seated heights and arm lengths, allowing us to minimize error due to differences in physicality. To maximize our sample range, piano experience ranged greatly within our participant group – from complete beginners with no experience to highly skilled players at level 10 in the Royal Conservatory of Music.
+Our experimental setup, pictured below, involved placing the railing parallel to the length of the keyboard at 3 distances. To keep measurements consistent, we used long plates of metal as references.
+    </h4>
+    <img id="test-picture" src="using device.jpg" />
+    <h4>
+        1.	Setup and familiarization
+        <br><br>
+To begin the experiment, participants were asked to interact with the piano without any support for around 2-3 minutes. During this time, any adjustments to seat level and keyboard height were made to maximize comfort. 
+<br><br>
+2.	 Control tasks
+<br><br>
+Prior to testing with the support railing, participants were asked to perform three piano-playing tests and to evaluate their initial comfort level. These tasks were…
+<ul>
+<li>Playing a C major scale up and down one octave at a comfortable speed using either one or both hands depending on their preference. </li>
+<li>Playing an alternating scale up and down one octave, this time with one hand only to focus on rotational movement.</li>
+<li>Playing a C major scale up and down one octave this time with staccato articulation using one hand only. </li>
+</ul>
+After each task, participants were asked to rate their comfort level on a Likert scale from 1 to 5. For each task, a demonstration was provided if necessary. This first iteration of the three tasks were controls tests as it allowed participants to familiarize themselves with the piano, learn the tests, and compare their comfort levels to something in the future. 
+<br><br>
+Participants were then asked to complete 10 repetitions of lateral raises with approximately 10 [lbs.] in each hand. Note that this was a late addition to the testing protocol, as we realized tiring out the shoulders of the participants could help provide better insight on comfort level of the device from a perspective more closely related to someone with cerebral palsy.
+<br><br>
+3.	Test with railing prototype
+<br><br>
+Following the lateral raises, the railing was set to its closest distance of 4.42 ± 0.005 cm from the edge of the keyboard to the center of the armrest. The distance was adjusted for each iteration of the three tests and the following steps were repeated for each distance: 4.42 cm, 12.42 cm, and 13.58 cm, each measured with an uncertainty of ± 0.005 cm.
+<ul>
+<li>Participants were instructed to place their arms on the support and perform the three scales.</li>
+<li>Participants were asked to rate their comfort levels on the Likert scale from 1-5 following each task.</li>
+<li>Participants were instructed to complete 10 repetitions of lateral raises. During this time, the railing prototype was adjusted to the next distance. </li>
+</ul>
+
+In total, participants played 9 scales using the railing support prototype and completed three sets of ten lateral raises.
+<br><br>
+4.	Final Evaluation and Feedback
+<br><br>
+At the conclusion of the testing, participants were asked three questions to evaluate the overall support and comfort of the device:
+<br><br>1.	Did the device support your arms effectively? (Pass/Fail)
+<br><br>2.	Was the device easy to use overall? (Pass/Fail)
+<br><br>3.	How did the device affect your playing? (Impeded/No Effect/Improved)
+
+This feedback, along with the comfort ratings, provided insights into the prototype’s effectiveness.
+<br><br>
+5.	Data Collection and Storage
+<br><br>
+The comfort ratings for each task and distance and the feedback from participants were recorded in a table format. The table includes the following information for each task: participant number (1-5), participant experience with piano (Beginner, Intermediate, Advanced), comfort rating for each task (1–5 on Likert scale), and responses to the final questions (Pass/Fail, Pass/Fail, Impeded/No Effect/Improved). 
+
+    </h4>
+<h3>
+    Results and Interpretation of Data
+</h3>
+<h4>
+    The following section presents data from the six tests conducted. It analyzes the relationships between distance, experience level, mean comfort. 
+</h4>
+<img src="testing results.png"/>
+<h4>
+    The prototype partially met its comfort target of 4/5 on the Likert scale, achieving it at distance three but falling short at distances one and two. While all participants reported the device provided effective arm support and usability (pass/fail), two thirds of participants stated that the device impeded playing. The following section analyzes the results of testing and the relationships between parameters and quality measures.
+</h4>
 </div>
 </body>
