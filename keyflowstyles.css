@@ -16,6 +16,9 @@ body {
     height: 100vh;
     overflow-x: hidden;
 }
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
 h1{
     font-size: 40px;
     margin: 0;

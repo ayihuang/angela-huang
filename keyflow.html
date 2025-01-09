@@ -112,5 +112,50 @@ use and set up, comfortable to use, and durable.
             <br><br>Our first iteration used cars which had an inner gear that powered an external light. This caused excess unwanted friction, so we cut the outer gear to stop it from turning the inner gear. Once we completed this step, the wheels were virtually frictionless. We then nailed the tracks to a 2” x 4” wooden plank to further ensure that the tracks stayed straight and to raise the whole system. The wood was the perfect height to encourage good posture and comfort for the user. 
         </h4>
     </div>
+    <h1>Engineering Analysis</h1>
+    <h4>
+        The criteria chosen for engineering analysis is “Max load to be relieved”. This load refers to the reduction of the force experienced by the upper arm muscles, the shoulder joint, and the elbow joint. Since our stakeholders are CP patients with weak upper body muscle strength, their upper arm muscles oftentimes are not physically capable of fully counteracting the weight of their arms (i.e., unable to lift arm for extended periods of time), and as such, they need a support to reduce the tension in the arm muscles and joints. Therefore, knowing the magnitude of the relieved load addresses this major stakeholder need, hence analyzing this chosen criterion is of particular importance. Additionally, successfully calculating a max relieved load enables an objective analysis regarding device effectiveness and practicality.
+    </h4>
+    <h3>
+        Analysis Approach
+    </h3>
+    <h4>
+        To complete the analysis, a simplified model of the human arm and hand in the piano-playing position will be used (see Figure 4 and 5 for the free body diagram). The model approximates the human arm as a simple frame containing three free body diagrams (FBD): one for the upper arm, the forearm and hand, and one for the upper arm muscle connecting the forearm and the upper arm. 2D equilibrium will be applied to the various FBDs to determine the load relieved, the force experienced by the muscles, and the shoulder joint and elbow joint reaction forces. 
+    </h4>
+    <h3>
+        Anatomical Data
+    </h3>
+    <h4>
+        Upper arm length =AD=0.3506 [m], forearm length  =DH=0.2552 [m], hand length =HJ=0.17463 [m], upper arm mass =1.0664 [kg], forearm mass =1.9065 [kg], hand mass =0.3565 [kg], angle of depression of hand =θ=10.00°, distance from the centroid of the sponge wrist support to the wrist joint =HI=0.0400 [m], the distance between the muscle attachment point to the upper arm bone and the shoulder joint =AB=0.0300 [m], forearm centroid has length DF= (x_f ) ̅ from point D, hand centroid has length HI= (x_h ) ̅ from point H, and according to a study of elbow muscles, distance from the elbow joint to the forearm muscle attachment point =DE=0.0470 [m] [12]. 
+    </h4>
+    <h3>
+        Desired Results
+    </h3>
+    <h4>
+        The normal contact force, N_relieved, that the sponge support acts onto the forearm. 
+        The force the shoulder joint experiences, F_s when in the piano-playing position.
+        The reaction force in the elbow, F_f and the muscle tension, F_muscle.
+    Assumptions and approximations in the model: 
+        The force due to gravity, g, is g=-9.81 [〖ms〗^(-2)] and the entire arm is a rigid body.
+        There are no frictional forces in the wrist and finger joints.
+        The muscle force represented in the FBD is the only muscle force acting on the arm. 
+        The centroid of the upper arm, forearm, and hand is accurately represented.
+        The weight of the accounted muscle member in the FBD is negligible.
+        The distance from the muscle attachment point on the upper arm to the shoulder joint is 3.00 [cm]. Also, the angle of depression of the hand during piano play is θ=10.00°. 
+        The forearm and upper arm are perpendicular to one another.
+        The straight-line path between the elbow and shoulder joint is parallel to the y-axis.    
+    </h4>
+    <h3>Free Body Diagrams</h3>
+    <img id="fbd-external" src="fbd-external.png" style="width: 600px"/>
+    <img id="fbd-arm" src="fbd-arm.png" style="width: 600px"/>
+    <h3>
+        Conclusion and Interpretation of Results
+    </h3>
+    <h4>
+        The force relieved from the arm muscles and joints when using our railing device is 10.90 [N], leaving the shoulder joint and elbow joint to experience 21.8 [N] and 3.04 [N] of force respectively. On the other hand, the upper arm muscles experience no tension forces while using this device.  To objectively measure the effectiveness of the railing device, we must compare the forces the joints and muscles experience while the stakeholder is using the device to an identical scenario where the stakeholder is not. In the device’s absence, it is calculated that the force the shoulder joint and elbow joint experiences increases to 32.7 [N] and -35.9 [N] respectively, while muscle force tension increases from 0 [N] to 50.4 [N]. In other words, the device reduces shoulder strain by 50%, reduces elbow strain by nearly 12 times, and ensures the upper arm muscles experience no forces. Therefore, it is sufficient to say that the railing device does indeed reduce muscle and joint strain by an adequate amount to be considered effective. 
+    </h4>
+    <img class="matlab-graphs" src="load-relieved.png" style="width: 600px"/>
+    <p>The load relieved off the arm for different sponge support distances measured from the wrist joint. The point (4, 10.8954) indicates the load relieved is 10.90 [N] when the sponge support is 4.00 [cm] from the wrist joint. This force value aligns with the calculated.</p>
+    <img class="matlab-graphs" src="load-relieved.png" style="width: 600px"/>
 </div>
 </body>
