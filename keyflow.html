@@ -11,11 +11,11 @@
         <div class ="sidebar">
             <ul class="nav" class = "headNav">
                 <li onclick= hideSidebar()><a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#D9D9D9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><a href="#project-section">Overview</a></li>
-                <li><a href="#experience-section">Project Context</a></li>
-                <li><a href="#about-section">Protoype</a></li>
-                <li><a href="#contact-section">Engineering Analysis</a></li>
-                <li><a href="#contact-section">Testing</a></li>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#context">Project Context</a></li>
+                <li><a href="#prototype">Protoype</a></li>
+                <li><a href="#analysis">Engineering Analysis</a></li>
+                <li><a href="#testing">Testing</a></li>
             </ul>
         </div>
             <a href="https://ayihuang.github.io/">
@@ -23,11 +23,11 @@
             </a>
             <ul class="nav">
                 <div class="hideOnMobile">
-                    <li><a href="#project-section">Overview</a></li>
-                    <li><a href="#experience-section">Project Context</a></li>
-                    <li><a href="#about-section">Protoype</a></li>
-                    <li><a href="#contact-section">Engineering Analysis</a></li>
-                    <li><a href="#contact-section">Testing</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#context">Project Context</a></li>
+                    <li><a href="#prototype">Protoype</a></li>
+                    <li><a href="#analysis">Engineering Analysis</a></li>
+                    <li><a href="#testing">Testing</a></li>
                 </div>
                 <div class="menu-button">
                 <li  onClick= showSidebar()><a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
@@ -45,9 +45,10 @@
             }
         </script>
         <!--<div class="title-image"></div>-->
+        <div id="overview"></div>
         <div class="title">
-            <h1>Keyflow Assist</h1>
-            <h3>A Mission to Improve Music Accesibility</h3>
+            <h1 id ="h1-title">Keyflow Assist</h1>
+            <h3 id ="h3-title">A Mission to Improve Music Accesibility</h3>
         </div>
         <div class="main-body">
             <div class="summary">
@@ -85,23 +86,26 @@ use and set up, comfortable to use, and durable.
         </div>
         <div class="bottom-triangle"></div>
         <div class="padder"></div>
+        <div id="context"></div>
         <h1>Project Context</h1>
         <div class="project-context">
          <div>  
-            <h4><img id="piano-picture" src="piano image.webp" style="width: 400px;"/>Cerebral palsy (CP) is a disability affecting movement and muscle tone caused by abnormal development or damage to the motor control sections in the brain before birth or during infancy. It affects 0.3% of live births [1]. Our problem space focuses on people with bilateral spastic cerebral palsy, meaning the disability affects both sides of the patient's body. 
-                <br><br>Children with CP may exhibit weaker shoulder abductor muscles than healthy children [2], which may make lifting the arms away from the body for actions like playing piano difficult [3]. In the same study, these patients were also found to have weaker wrist extensor muscles, which stretch the fingers out [2]. Additionally, CP patients exhibit weaker gross manual dexterity, fine finger mobility, and sensory deficits which greatly affect their manual abilities [4]. 
-                <br><br>To aid in these deficits, physical therapy is often used to enhance dexterity, coordination, and strength [5]. One form of physical therapy is neuromuscular music therapy, where music can be used in conjunction with traditional physical therapy to produce a noticeable improvement in hand, arm, and fine motor skills [6]. Meanwhile, piano playing requires many hand skills, including fine motor skills and requires activation of the finger and wrist extensor muscles [7] 
+            <h4><img id="piano-picture" src="piano image.webp" style="width: 320px;"/>Cerebral palsy (CP) is a disability affecting movement and muscle tone caused by abnormal development or damage to the motor control sections in the brain before birth or during infancy. It affects 0.3% of live births. Our problem space focuses on people with bilateral spastic cerebral palsy, meaning the disability affects both sides of the patient's body. 
+                <br><br>Children with CP may exhibit weaker shoulder abductor muscles than healthy children, which may make lifting the arms away from the body for actions like playing piano difficult. In the same study, these patients were also found to have weaker wrist extensor muscles, which stretch the fingers out. Additionally, CP patients exhibit weaker gross manual dexterity, fine finger mobility, and sensory deficits which greatly affect their manual abilities. 
+                <br><br>To aid in these deficits, physical therapy is often used to enhance dexterity, coordination, and strength. One form of physical therapy is neuromuscular music therapy, where music can be used in conjunction with traditional physical therapy to produce a noticeable improvement in hand, arm, and fine motor skills. Meanwhile, piano playing requires many hand skills, including fine motor skills and requires activation of the finger and wrist extensor muscles
                 <br><br>Therefore, the requirements of piano playing include the areas of development for CP patients, showing a possibility of its use as physical therapy. For artifacts, braces and walkers are existing orthotic devices to support the muscles and strengthen mobility in CP patients [8], giving inspiration for an angle from which the group could approach our problem space.
                 <br><br>Key criteria and constraints for our device include ease and comfort in use and set up, and its durability, but also many other factors. Ease and comfort in use is a key criterion for stakeholders, including being able to accommodate a variety of patients with CP who may have similar, but diverse needs and physiology. Ways to address this criterion include making the design intuitive to set up and use, and making the device adjustable so a variety of stakeholders with different physiologies may be comfortable while using it. 
                 <br><br>
                 <br><br>Given that this device is for facilitating physiotherapy in the form of piano playing, we may be constrained by the number of physiotherapists with piano knowledge to facilitate the physiotherapy. Similarly, the device must be easy to set up and integrate into a physiotherapy routine and enhance it rather than cause more troubles. However, we are constrained by the fact that given the size of a piano, adding a device to it may make it difficult to set up and take down, and impact portability. 
-                <img id ="concept-sketch" src="concept sketch.png" style="width: 400px"/>
+                <img id ="concept-sketch" src="concept sketch.png" style="width: 320px"/>
                 <br><br>To address the comfort criteria, the device should be made from materials that are comfortable and adjustable to the user. At the same time, the device should be durable and capable of being repaired and withstanding the forces that would be applied to it. These criteria are constrained by the financial and availability of resources, such as piano types and environments, to the design team throughout the whole design process, meaning that every desire in the device may not be fulfilled.
                 <br><br>Fulfilling these functions, criteria, and constraints was the reason we selected the rail design to prototype. 
                
             </h4>
         </div> 
         </div>
+        <div class="top-triangle"></div>
+        <div id="prototype"></div>
         <div class="prototype-section">
         <h1>
             Prototype
@@ -112,6 +116,8 @@ use and set up, comfortable to use, and durable.
             <br><br>Our first iteration used cars which had an inner gear that powered an external light. This caused excess unwanted friction, so we cut the outer gear to stop it from turning the inner gear. Once we completed this step, the wheels were virtually frictionless. We then nailed the tracks to a 2” x 4” wooden plank to further ensure that the tracks stayed straight and to raise the whole system. The wood was the perfect height to encourage good posture and comfort for the user. 
         </h4>
     </div>
+    <div class="bottom-triangle"></div>
+    <div id="analysis"></div>
     <h1>Engineering Analysis</h1>
     <h4>
         The criteria chosen for engineering analysis is “Max load to be relieved”. This load refers to the reduction of the force experienced by the upper arm muscles, the shoulder joint, and the elbow joint. Since our stakeholders are CP patients with weak upper body muscle strength, their upper arm muscles oftentimes are not physically capable of fully counteracting the weight of their arms (i.e., unable to lift arm for extended periods of time), and as such, they need a support to reduce the tension in the arm muscles and joints. Therefore, knowing the magnitude of the relieved load addresses this major stakeholder need, hence analyzing this chosen criterion is of particular importance. Additionally, successfully calculating a max relieved load enables an objective analysis regarding device effectiveness and practicality.
@@ -175,12 +181,15 @@ use and set up, comfortable to use, and durable.
     <h4>
         The max load to be relieved approaches infinity as the sponge support is moved closer to the elbow joint (as d approaches the forearm length). However, in hindsight, maximizing the relief load is not the best way to measure the device’s effectiveness, rather it is better to determine where the sponge support should be positioned so that the combined force experienced by the elbow and shoulder joint is minimized. This is achieved by expressing the sum of the magnitude of the shoulder and elbow joint forces as a function of the sponge support distance along the forearm measured from the wrist. From figure 8, the position of the sponge support position between 8.73 to 18.34 centimeters away from the wrist enables the shoulder and elbow joints to experience the lowest combined force possible of 18.703 [N], which is also the weight of the upper arm. However, the ability to play piano may decrease as the support is placed closer to the user’s body, therefore the user should place the sponge support at roughly 9 [cm] for maximum comfortability. 
     </h4>
+    <div id="testing"></div>
+    <div class="testing-top">
     <h2>Testing</h2>
-    <img id="p-diagram" src="p diagram.png" style="max-width: 600px"/>
+    <img class="picture-format" id="p-diagram" src="p diagram.png" style="max-width: 600px"/>
     <h4>
-        Prior to testing, a P-Diagram analysis was conducted to identify design parameters that could influence the performance of the piano railing prototype [Figure 9]. Inputs for the test included the user's piano skills and the vertical and horizontal distances of the railing from the keys. To maximize user comfort, several design parameters were considered. Varied parameters include the distance of the railing to the piano and the height of the railing above the keys. These adjustments were expected to influence user posture and arm support during piano playing. Certain parameters were held constant to reduce errors in test data, such as padding material, sliding mechanism, and track type. While noise parameters such as arm length, seated height, and posture during testing were ignored, they could potentially introduce errors into the data. 
+        Prior to testing, a P-Diagram analysis was conducted to identify design parameters that could influence the performance of the piano railing prototype. Inputs for the test included the user's piano skills and the vertical and horizontal distances of the railing from the keys. To maximize user comfort, several design parameters were considered. Varied parameters include the distance of the railing to the piano and the height of the railing above the keys. These adjustments were expected to influence user posture and arm support during piano playing. Certain parameters were held constant to reduce errors in test data, such as padding material, sliding mechanism, and track type. While noise parameters such as arm length, seated height, and posture during testing were ignored, they could potentially introduce errors into the data. 
         <br><br>Additionally, prior experience with the piano was measured and appeared to introduce some bias in the results, as participants with varying levels of experience with the piano reacted differently to the prototype. The quality of the design will be assessed based on user comfort, arm support, overall usability, and impact on playing. The target outcome is to achieve an average score of 4/5 on the Likert Scale for comfort and ensure that arm support and overall usability are effective (pass/fail). Additionally, as we chose to build a focused, low-fidelity prototype, our goal was to ensure that the prototype had no negative impact on playing. Ultimately, the objective of this test is to evaluate the comfort, support, usability, and impact of playing the piano railing prototype. Primarily, the focus is to analyze how variations in the distance of the railing from the piano affect user comfort.
     </h4>
+</div>
     <h3>
         Test Protocol
     </h3>
@@ -188,7 +197,7 @@ use and set up, comfortable to use, and durable.
         The testing process involved six participants selected based on similar physical characteristics but varying levels of experience with piano. Chosen participants were of similar seated heights and arm lengths, allowing us to minimize error due to differences in physicality. To maximize our sample range, piano experience ranged greatly within our participant group – from complete beginners with no experience to highly skilled players at level 10 in the Royal Conservatory of Music.
 Our experimental setup, pictured below, involved placing the railing parallel to the length of the keyboard at 3 distances. To keep measurements consistent, we used long plates of metal as references.
     </h4>
-    <img id="test-picture" src="using device.jpg" />
+    <img class="picture-format" id="test-picture" src="using device.jpg" />
     <h4>
         1.	Setup and familiarization
         <br><br>
@@ -237,7 +246,7 @@ The comfort ratings for each task and distance and the feedback from participant
 <h4>
     The following section presents data from the six tests conducted. It analyzes the relationships between distance, experience level, mean comfort. 
 </h4>
-<img src="testing results.png"/>
+<img class="picture-format" src="testing results.png"/>
 <h4>
     The prototype partially met its comfort target of 4/5 on the Likert scale, achieving it at distance three but falling short at distances one and two. While all participants reported the device provided effective arm support and usability (pass/fail), two thirds of participants stated that the device impeded playing. The following section analyzes the results of testing and the relationships between parameters and quality measures.
 </h4>

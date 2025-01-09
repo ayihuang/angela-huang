@@ -15,6 +15,7 @@ body {
     padding:0;
     height: 100vh;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 p{
     font-family: 'Times New Roman', Times, serif;
@@ -29,6 +30,9 @@ h1{
     font-family: Verdana, sans-serif;
     padding-bottom: 20px;
     padding-top: 20px;
+}
+#h1-title{
+    padding-bottom:0px;
 }
 h2{
     margin-top: 0;
@@ -47,6 +51,11 @@ h3{
     padding-top: 30px;
     padding-bottom: 10px;
 }
+#h3-title{
+    text-align: center;
+    padding: none;
+    margin: none;
+}
 h4{
     font-family: Verdana, sans-serif;
     z-index: 9999;
@@ -54,6 +63,7 @@ h4{
     margin: 0;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 20px;
 }
 a{
     text-decoration: none;
@@ -145,7 +155,7 @@ a{
     margin-top: 0;
 }
 .title{
-    background-color: #d8e2e7;
+    background-color: #f0f0f0;
     padding-top: 80px;
     padding-bottom: 20px;
 }
@@ -156,7 +166,10 @@ a{
     align-items: center;
 }
 #using-device{
-    border-radius: 15px;;
+    border-radius: 15px;
+    display: block;
+    margin:auto;
+    padding-bottom: 20px;
 }
 .summary2{
     display: flex;
@@ -205,6 +218,8 @@ a{
 }
 .prototype-section{
     background-color: #e1d5fa;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 #fbd-external{
     display: block;
@@ -222,6 +237,15 @@ a{
 .matlab-graphs{
     display: block;
     margin: auto;
+}
+.picture-format{
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;;
+}
+.testing-top{
+    background-color:#e6e6e6;
 }
 @media (max-width: 1060px){
     .hideOnMobile{
@@ -259,6 +283,9 @@ a{
         display:block;
         margin: auto;
     }
+    .picture-format{
+        width: 400px;
+    }
     #fbd-external{
         max-width: 320px;
     }
@@ -274,12 +301,16 @@ a{
     .matlab-section{
         display:block;
     }
+
 }
 @media (max-width: 400px)
 {
     .sidebar{
         width: 100%;
-    }  .
+    } 
+    .picture-format{
+        width: 320px;
+    }
 }
 
 @media (min-width: 1061px){
