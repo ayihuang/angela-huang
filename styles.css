@@ -8,7 +8,7 @@
 body {
     background: rgb(141, 204, 255);
     color: rgb(0, 0, 0);
-    font-family: 'Courier New', monospace;
+    font-family: Arial, sans-serif;
     letter-spacing: 0px;
     box-sizing: border-box;
     margin:0;
@@ -26,6 +26,7 @@ a{
 
 h1{
     font-size: 40px;
+    font-family: 'Courier New', monospace;
     margin: 0;
     text-align: center;
 }
@@ -33,22 +34,25 @@ h2{
     margin-top: 0;
     padding-top: 10px;
     font-size:35px;
-    font-family: Verdana, sans-serif;
+    font-family: Arial, sans-serif
 }
 h3{
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 50px;
-    font-family: Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     margin:0;
     z-index: 999;
     line-height: 1.5;
 }
 h4{
-    font-family: Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     z-index: 9999;
     line-height: 1.5;
     margin: 0;
+}
+p{
+    font-weight: 600;
 }
 .nav li {
     display: inline-block;
@@ -220,10 +224,7 @@ h4{
     justify-content: center;
     text-align: center;
 }
-.project-photo{
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-}
+
 #project-h1-text{
     padding-left: 40px;
     padding-right: 40px;
@@ -232,19 +233,33 @@ h4{
 .project{
     border: 2px solid #ccc;
     border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Adds space between content and border */
     margin: auto;
     background-color: #f9f9f9; /* Optional: light background for contrast */
-    height: 400px;
-    width: 300px;
+    height: 360px;
+    width: 280px;
 
 }
 .project:hover{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Optional: subtle shadow for a professional look */
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 .project-description{
     padding-top: 20px;
+    text-align: left;
+    width: 200px;
+}
+.learn-button{
+    background: rgb(137,218,238);
+    background: linear-gradient(90deg, rgba(137,218,238,1) 0%, rgba(117,189,218,1) 46%, rgba(177,141,244,1) 100%);
+    height: 35px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.learn-button:hover{
+    box-shadow: 0 4px 6px rgba(77, 140, 165, 0.5);
 }
 .banner{
     display:flex;
@@ -252,7 +267,7 @@ h4{
     margin:auto;
     align-content: center;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow-y: hidden;
     gap: 20px;
 }
@@ -356,7 +371,7 @@ section .wave.wave4{
    position: relative;
 }
 .skill-section{
-    background-color: rgb(38, 221, 221);
+    background-color: rgb(255, 255, 255);
     z-index: 9999;
     text-align: center;
 }
@@ -379,19 +394,19 @@ section .wave.wave4{
     padding-bottom: 7%;
 }
 .about{
-    background-color: rgb(38, 221, 221);
+    background-color: rgb(255, 255, 255);
 }
 .about-me{
     padding-left: 10%;
     padding-right:10%;
     text-align: left;
     padding-bottom: 5%;
-    background-color: rgb(38, 221, 221);
+    background-color: rgb(187, 233, 233);
     border: 2px solid rgb(42, 230, 230);
     border-radius: 10px; /* Rounded corners */
     padding: 20px; /* Adds space between content and border */
     margin: 40px; /* Adds space between projects */
-    background-color: rgb(42, 230, 230);
+    background-color: rgb(163, 219, 219);
     box-shadow: 0 4px 6px rgba(25, 170, 170, 0.5); 
 }
 .connect
@@ -471,9 +486,7 @@ section .wave.wave4{
 }
 @media (max-width: 900px)
 {
-    .project-photo{
-        max-width: 400px;
-    }
+
     h3{
         padding-left: 50px;
         padding-right: 50px;
@@ -488,9 +501,7 @@ section .wave.wave4{
 
 @media (max-width: 550px)
 {
-    .project-photo{
-        max-width: 256px;
-    }
+
     h3{
         padding-left: 10px;
         padding-right: 10px;
