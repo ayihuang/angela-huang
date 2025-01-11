@@ -84,7 +84,7 @@ p{
     margin: 0;
     padding: 10px 0; /* Optional padding for content inside header */
     box-sizing: border-box;
-    background-color: rgb(141, 204, 255);
+    background-color: rgb(254, 255, 255);
 }
 .navigation {
     display: flex;
@@ -320,21 +320,28 @@ p{
     z-index: -1;
 }
 .experiences{
-    border: 2px solid #ccc;
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Adds space between content and border */
-    margin: 40px; /* Adds space between projects */
-    background-color: rgb(93, 182, 255);
+
+    background-image: url(background\ pattern.png);
+    background-color:rgb(110, 188, 252);
+    width: 100%;
+    margin-top: 12%;
+    border: 8px solid rgb(89, 167, 231);
+    border-left: 0;
 }
 .experience{
     padding-left: 10vw;
     text-align: left;
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     padding-right:50px;
     z-index: 999;
+    background-color: rgb(186, 217, 243);
+    border: 2px solid rgb(89, 167, 231);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
 }
 #experience-title{
-    padding-top: 12%;
+    padding-top: 7%;
     padding-bottom: 7%;
     padding-left: 40px;
     padding-right: 40px;
@@ -412,7 +419,13 @@ section .wave.wave4{
 .skill-section{
     background-color: rgb(255, 255, 255);
     z-index: 9999;
-    text-align: center;
+    text-align: left;
+}
+.skill-background{
+    background-color: rgb(223, 247, 247);
+    border: 2px solid rgb(223, 247, 247);
+    padding-top: 20px;
+    padding-left: 5%;
 }
 #blue-fish{
     position: absolute;
