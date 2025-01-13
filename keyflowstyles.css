@@ -91,7 +91,7 @@ a{
 }
 
 .nav li :hover{
-    background-color:rgb(40, 137, 216);
+    background-color:rgb(127, 189, 240);
 }
 
 #header {
@@ -99,7 +99,7 @@ a{
     margin: 0;
     padding: 10px 0; /* Optional padding for content inside header */
     box-sizing: border-box;
-    background-color: rgb(47, 158, 248);
+    background-color: rgb(254, 255, 255);
 }
 .navigation {
     display: flex;
@@ -121,7 +121,7 @@ a{
     width: 250px;
     backdrop-filter: blur(10px);
     z-index: 11;
-    background-color: rgb(47, 158, 248);
+    background-color: rgb(141, 204, 255);
     box-shadow: -10px 0 10px rgb(35, 122, 194);
     display: none;
     flex-direction: column;

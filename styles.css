@@ -76,7 +76,7 @@ p{
 }
 
 .nav li :hover{
-    background-color:rgb(40, 137, 216);
+    background-color:rgb(127, 189, 240);
 }
 
 #header {
@@ -423,9 +423,11 @@ section .wave.wave4{
 }
 .skill-background{
     background-color: rgb(223, 247, 247);
-    border: 2px solid rgb(223, 247, 247);
+    border: 2px solid rgb(133, 238, 238);
     padding-top: 20px;
     padding-left: 5%;
+    margin-left: 5%;
+    margin-right: 5%
 }
 #blue-fish{
     position: absolute;
@@ -446,6 +448,7 @@ section .wave.wave4{
     padding-bottom: 7%;
 }
 .about{
+    padding-top: 12%;
     background-color: rgb(255, 255, 255);
 }
 .about-me{
@@ -453,13 +456,34 @@ section .wave.wave4{
     padding-right:10%;
     text-align: left;
     padding-bottom: 5%;
-    background-color: rgb(187, 233, 233);
-    border: 2px solid rgb(42, 230, 230);
+    border: 2px solid rgb(192, 248, 248);
     border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Adds space between content and border */
-    margin: 40px; /* Adds space between projects */
-    background-color: rgb(163, 219, 219);
-    box-shadow: 0 4px 6px rgba(25, 170, 170, 0.5); 
+    padding: 20px; 
+    margin: 40px; 
+    background-color: rgb(198, 245, 245);
+    box-shadow: 0 4px 6px rgba(88, 161, 161, 0.5); 
+}
+.top-triangle{
+    width:0;
+    height: 0;
+    border-left: 99vw solid transparent;
+    border-bottom: 5vw solid rgb(194, 240, 252);
+}
+.bottom-triangle{
+    width:0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-top: 5vw solid rgb(194, 240, 252);
+}
+.about-background{
+    background-color: rgb(194, 240, 252);
+    padding-top: 30px;
+}
+.about-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
 }
 .connect
 {
@@ -509,6 +533,12 @@ section .wave.wave4{
     gap: 20px;
     justify-content: center;
 }
+.name-linkedin{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
 #connect-text{
     padding-bottom: 7%;
 }
@@ -549,6 +579,9 @@ section .wave.wave4{
     .experience{
         padding-left:5vw;
     }
+    .about-flex{
+        display: block;
+    }
 }
 
 @media (max-width: 550px)
@@ -563,7 +596,19 @@ section .wave.wave4{
         float: none; /* Prevent any floating behavior */
         clear: both; /* Clear any floats from earlier elements */
     }
-
+    #resume-name{
+        display: block;
+    }
+    .name-link{
+        display:block;
+    }
+    .block-wrapper{
+        display: block;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 @media (max-width: 861px){
     .hideOnMobile{
