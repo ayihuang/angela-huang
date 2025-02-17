@@ -29,6 +29,8 @@ h1{
     font-family: 'Courier New', monospace;
     margin: 0;
     text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 h2{
     margin-top: 0;
@@ -488,6 +490,7 @@ section .wave.wave4{
 .connect
 {
     background-color: rgb(228, 216, 147);
+    padding-bottom: 100px;
 }
 #varsity-photo{
     animation: imageBob 5s infinite;

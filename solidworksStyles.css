@@ -1,0 +1,115 @@
+.html{
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    letter-spacing: 0px;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.nav li {
+    display: inline-block;
+    align-items: center;
+    font-size: 14px;
+    margin-left: 0px; /* Adjust spacing as needed */   
+}
+.sidebar li{
+    margin-bottom: 60px;
+}
+
+.headNav a{
+    color: white;
+}
+.headNav a:visited{
+    color:rgb(0, 0, 0)
+}
+.nav a{
+    padding: 24px 15px 24px 15px;
+    height:100%;
+}
+
+.nav li :hover{
+    background-color:rgb(127, 189, 240);
+}
+
+#header {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0; /* Optional padding for content inside header */
+    box-sizing: border-box;
+    background-color: rgb(254, 255, 255);
+}
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px;
+    color: white;
+    font-family: Verdana, sans-serif;
+    justify-content: flex-start;
+    box-shadow: -5px 0 5px rgba(0, 0, 0.1);
+    position: fixed;
+    z-index: 9999999;
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    width: 250px;
+    backdrop-filter: blur(10px);
+    z-index: 11;
+    background-color: rgb(141, 204, 255);
+    box-shadow: -10px 0 10px rgb(35, 122, 194);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width:100%;
+}
+
+.sidebar a{
+    width:100%;
+}
+@media (max-width: 1060px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media (max-width: 400px)
+{
+    .sidebar{
+        width: 100%;
+    } 
+
+}
+@media (min-width: 1061px){
+    .menu-button{
+        display: none;
+    }
+}
+
+.menu-button{
+    height: 100%;
+    transform: translateY(-4px);
+}
