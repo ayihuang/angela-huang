@@ -32,6 +32,7 @@ h1{
     padding-top: 20px;
 }
 #h1-title{
+    padding-top: 50px;
     padding-bottom:0px;
 }
 h2{
@@ -53,11 +54,12 @@ h3{
 }
 #h3-title{
     text-align: center;
-    padding: none;
+    padding-bottom: 75px;
+    padding-top: 50px;
     margin: none;
 }
 h4{
-    font-family: Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     z-index: 9999;
     line-height: 1.5;
     margin: 0;
@@ -155,7 +157,7 @@ a{
     margin-top: 0;
 }
 .title{
-    background-color: #f0f0f0;
+    background-color:  rgb(199, 229, 253);;
     padding-top: 80px;
     padding-bottom: 20px;
 }
@@ -164,9 +166,10 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(141, 204, 255);
 }
 #using-device{
-    border-radius: 15px;
+    border-radius: px;
     display: block;
     margin:auto;
     padding-bottom: 20px;
@@ -176,7 +179,7 @@ a{
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    background-color: #e6e6e6;
+    background: rgb(141, 204, 255);
     padding-top: 30px;
     padding-bottom: 30px;
     gap: 50px;
@@ -192,12 +195,14 @@ a{
     height: 0;
     border-left: 100vw solid transparent;
     border-bottom: 2vw solid #e1d5fa;
+    margin-top: 50px;
 }
 .bottom-triangle{
     width:0;
     height: 0;
     border-right: 100vw solid transparent;
     border-top: 2vw solid #e1d5fa;
+    margin-bottom:50px;
 }
 .goal{
     background-color: #e1d5fa;
@@ -210,6 +215,7 @@ a{
 }
 #piano-picture{
     float: right;
+
 }
 #concept-sketch{
     float:left;
@@ -245,7 +251,9 @@ a{
     padding-bottom: 20px;;
 }
 .testing-top{
-    background-color:#e6e6e6;
+    margin-top: 50px;
+    background-color: rgb(200, 230, 255);
+    margin-bottom:50px;
 }
 @media (max-width: 1060px){
     .hideOnMobile{
