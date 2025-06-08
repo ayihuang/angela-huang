@@ -87,6 +87,13 @@ a{
 .sidebar a{
     width:100%;
 }
+
+.title{
+    padding-top: 100px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
 @media (max-width: 1060px){
     .hideOnMobile{
         display: none;
