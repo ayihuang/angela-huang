@@ -255,6 +255,9 @@ a{
     background-color: rgb(200, 230, 255);
     margin-bottom:50px;
 }
+.recommendations{
+    background-color: rgb(200, 230, 255);
+}
 @media (max-width: 1060px){
     .hideOnMobile{
         display: none;
