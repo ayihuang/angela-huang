@@ -55,12 +55,12 @@ h4{
 }
 p{
     font-weight: 600;
+    font-family: Arial, sans-serif;
 }
 .nav li {
     display: inline-block;
-    align-items: center;
-    font-size: 14px;
-    margin-left: 0px; /* Adjust spacing as needed */   
+    margin: 0 10px;
+    font-size: 13px;  
 }
 .sidebar li{
     margin-bottom: 60px;
@@ -131,6 +131,9 @@ p{
 #intro-text{
     transform: translateY(50vh);
     text-align: center;
+    font-size: 50px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
 }
 
 .clouds
@@ -235,14 +238,17 @@ p{
 .project{
     border: 2px solid #ccc;
     border-radius: 10px; /* Rounded corners */
-    margin: auto;
     background-color: #f9f9f9; /* Optional: light background for contrast */
     height: 360px;
-    width: 280px;
+    width: 320px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .project:hover{
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Optional: subtle shadow for a professional look */
-    transform: translateY(-2px);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 .project-description{
     text-align: left;
@@ -551,6 +557,9 @@ section .wave.wave4{
 #linkedin-logo
 {
     transform: translateY(-6px);
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
 }
 #sand1{
     transform:translateX(20px);
