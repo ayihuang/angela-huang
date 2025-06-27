@@ -1,0 +1,413 @@
+.html{
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(166, 212, 250);
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0px;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-left:5%;
+    padding-right: 5%;
+}
+h1{
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#h1-title{
+    padding-top: 50px;
+    padding-bottom:0px;
+}
+h2{
+    margin-top: 0;
+    padding-top: 10px;
+    font-size:35px;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+}
+h3{
+    text-align: left;
+    font-family: Verdana, sans-serif;
+    margin:0;
+    z-index: 999;
+    line-height: 1.5;
+    padding-left: 5%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+#h3-title{
+    text-align: center;
+    padding-bottom: 75px;
+    padding-top: 50px;
+    margin: none;
+}
+h4{
+    font-family: Arial, sans-serif;
+    z-index: 9999;
+    line-height: 1.5;
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.nav li {
+    display: inline-block;
+    align-items: center;
+    font-size: 14px;
+    margin-left: 0px; /* Adjust spacing as needed */   
+}
+.sidebar li{
+    margin-bottom: 60px;
+}
+
+.headNav a{
+    color: white;
+}
+.headNav a:visited{
+    color:rgb(0, 0, 0)
+}
+.nav a{
+    padding: 24px 15px 24px 15px;
+    height:100%;
+}
+
+.nav li :hover{
+    background-color:rgb(127, 189, 240);
+}
+
+#header {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0; /* Optional padding for content inside header */
+    box-sizing: border-box;
+    background-color: rgb(254, 255, 255);
+}
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px;
+    color: white;
+    font-family: Verdana, sans-serif;
+    justify-content: flex-start;
+    box-shadow: -5px 0 5px rgba(0, 0, 0.1);
+    position: fixed;
+    z-index: 9999999;
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    width: 250px;
+    backdrop-filter: blur(10px);
+    z-index: 11;
+    background-color: rgb(141, 204, 255);
+    box-shadow: -10px 0 10px rgb(35, 122, 194);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width:100%;
+}
+
+.sidebar a{
+    width:100%;
+}
+.main-body{
+    background-color: white;
+}
+.title-image{
+    background-image: url('using\ device.jpg');
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background image fixed */
+    position: relative;
+    height: 40vh;
+;
+}
+.intro-text{
+    display:block;
+    text-align: center;
+    margin-top: 0;
+}
+.title{
+    background-color:  rgb(233, 195, 255);;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+.summary{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(253, 253, 253);
+}
+#using-device{
+    border-radius: px;
+    display: block;
+    margin:auto;
+    padding-bottom: 20px;
+}
+.summary2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background: rgb(141, 204, 255);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 50px;
+}
+#testing-picture{
+    padding-left: 5%;
+}
+.padder{
+    height: 7%;
+}
+.top-triangle{
+    width:0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 2vw solid #e1d5fa;
+    margin-top: 50px;
+}
+.bottom-triangle{
+    width:0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-top: 2vw solid #e1d5fa;
+    margin-bottom:50px;
+}
+.goal{
+    background-color: #e1d5fa;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.project-context{
+    display: flex;   
+}
+#piano-picture{
+    float: right;
+
+}
+#concept-sketch{
+    float:left;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+.prototype-section{
+    background-color: #e1d5fa;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#fbd-external{
+    display: block;
+    margin: auto;
+}
+#fbd-arm{
+    display: block;
+    margin: auto;
+}
+.free-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.matlab-graphs{
+    display: block;
+    margin: auto;
+}
+.picture-format{
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;;
+}
+.testing-top{
+    margin-top: 50px;
+    background-color: rgb(200, 230, 255);
+    margin-bottom:50px;
+}
+.recommendations{
+    background-color: rgb(200, 230, 255);
+}
+@media (max-width: 1060px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    #using-device{
+        max-width: 400px;
+    }
+    #testing-picture{
+        max-width: 400px;
+    }
+}
+@media(max-width: 800px)
+{
+    .summary{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .summary2{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    #using-device{
+        max-width: 320px;
+        display:block;
+        margin: auto;
+    }
+    #testing-picture{
+        max-width: 320px;
+        display:block;
+        margin: auto;
+    }
+    .picture-format{
+        width: 400px;
+    }
+    #fbd-external{
+        max-width: 320px;
+    }
+    #fbd-arm{
+        max-width: 320px;
+    }
+    .free-body{
+        display:block;
+    }
+    .matlab-graphs{
+        max-width: 320px;
+    }
+    .matlab-section{
+        display:block;
+    }
+
+}
+@media (max-width: 400px)
+{
+    .sidebar{
+        width: 100%;
+    } 
+    .picture-format{
+        width: 320px;
+    }
+}
+
+@media (min-width: 1061px){
+    .menu-button{
+        display: none;
+    }
+}
+
+.menu-button{
+    height: 100%;
+    transform: translateY(-4px);
+}
+
+/* --- Mobile Responsiveness Improvements --- */
+
+@media (max-width: 768px) {
+    .summary,
+    .summary2,
+    .project-context,
+    .free-body,
+    .matlab-section {
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #using-device,
+    #testing-picture,
+    #piano-picture,
+    #concept-sketch,
+    #fbd-external,
+    #fbd-arm,
+    .matlab-graphs,
+    .picture-format {
+        width: 100%;
+        max-width: 320px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .nav li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav a {
+        padding: 14px;
+        display: block;
+    }
+
+    h3, h4 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar li {
+        padding: 10px 0;
+        text-align: left;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}

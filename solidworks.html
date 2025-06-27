@@ -11,11 +11,9 @@
     <div class ="sidebar">
         <ul class="nav" class = "headNav">
             <li onclick= hideSidebar()><a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#context">Project Context</a></li>
-            <li><a href="#prototype">Protoype</a></li>
-            <li><a href="#analysis">Engineering Analysis</a></li>
-            <li><a href="#testing">Testing</a></li>
+            <li><a href="#woodpecker">Puzzle Toy</a></li>
+            <li><a href="#context">Light Rail Train</a></li>
+            <li><a href="#prototype">Candy Dispenser</a></li>
         </ul>
     </div>
         <a href="https://angela-huang.vercel.app">
@@ -23,11 +21,9 @@
         </a>
         <ul class="nav">
             <div class="hideOnMobile">
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#context">Project Context</a></li>
-                <li><a href="#prototype">Protoype</a></li>
-                <li><a href="#analysis">Engineering Analysis</a></li>
-                <li><a href="#testing">Testing</a></li>
+                <li><a href="#overview">Puzzle Toy</a></li>
+                <li><a href="#context">Light Rail Train</a></li>
+                <li><a href="#context">Candy Dispenser</a></li>
             </div>
             <div class="menu-button">
             <li  onClick= showSidebar()><a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
@@ -49,17 +45,39 @@
         <h1>Parts, Assemblies, Drawings</h1>
     </div>
     <div>
-        <a href="/solidworks.html">
-            <div class="project">
-            <img class="project-photo" id = "solidworks-photo" src="SolidWorks-Logo.png" style="width:140"/>
-            <img class="project-photo" id = "solidworks-example" src="solidworks assembly.png" style="width:240"/>
-            <h3 class = "project-description">
-               A Collection of Solidworks Projects: Drawings and Assemblies (Coming Soon!)
-            </h3>
-            <div class="learn-button" id="solidworks-learn">
-                <p>Learn More</p>
+        <div class="puzzleToy" id ="woodpecker">
+        <h2>Woodpecker Puzzle Toy</h2>
+        <hr width="100%" size="5" color="gray">
+        <div class="overview" id="woodpeckerOverview"> 
+            <div>
+                <img src="Woodpecker toy.jpg" id ="woodpecker-image" alt="Woodpecker Puzzle Toy" style="width: 300px;"/>
             </div>
-            </div>
-        </a>
+            <div>
+            <p>SolidWorks was used to design a woodpecker puzzle toy that can be assembled and disassembled. The toy consists of multiple parts that fit together to form a complete structure.
+                <br><br>Once assembled, the woodpecker can peck at the tree with a push of the top button. 
+                Presice measurements and tolerances were applied to ennsure the mechanical function of the toy. The pecking mechanism involved a
+                careful balance between aesthetic design and physical simplicity, ensureing a smooth pecking action.
+            </p>
+        </div>
+        </div>
+        <hr width="100%" size="5" color="gray">
+        <div id="brainstorming">
+            <h3>Brainstorming</h3>
+            <br>
+            <p>The goal of the project was to present elements that are unique to Canada. The initial idea of a maple tree
+                was iterated on to include a moving animal too, which ended up beig a woodpecker that pecks at the tree.
+                <br><br>Early iterations of the design still had unclear mechnisms as to how the woodpecker wuld both move and attach tp the tree.
+            </p>
+            </p>
+        </div>
+        <img src="Woodpecker tree.png" alt="Tree" style="width: 500px;"/>
+        <h3>Parts</h3>
+        <ul>
+            <li>Base</li>
+            <li>Top</li>
+            <li>Side Panels</li>
+            <li>Connecting Rods</li>
+        </ul>
+        </div>
     </div>
 </body>

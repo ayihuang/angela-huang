@@ -1,0 +1,118 @@
+
+/* --- Mobile Responsiveness Improvements --- */
+@media (max-width: 768px) {
+    .summary,
+    .summary2,
+    .project-context,
+    .free-body,
+    .matlab-section {
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #using-device,
+    #testing-picture,
+    #piano-picture,
+    #concept-sketch,
+    #fbd-external,
+    #fbd-arm,
+    .matlab-graphs,
+    .picture-format {
+        width: 100%;
+        max-width: 320px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .nav li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav a {
+        padding: 14px;
+        display: block;
+    }
+
+    h3, h4 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar li {
+        padding: 10px 0;
+        text-align: left;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+/* --- New Color Scheme --- */
+body {
+    background: #f7f9fc;
+    color: #222;
+}
+
+.navigation, #header {
+    background-color: #ffffff;
+}
+
+.nav a {
+    color: #1d4ed8;
+}
+
+.nav li :hover {
+    background-color: #93c5fd;
+}
+
+.sidebar {
+    background-color: #dceefb;
+}
+
+.title {
+    background-color: #e6f2ff;
+}
+
+.goal, .prototype-section, .recommendations, .testing-top {
+    background-color: #f0f4f8;
+}
+
+.top-triangle, .bottom-triangle {
+    border-color: transparent transparent #cbd5e1 transparent;
+}
+
+h1, h2 {
+    color: #1e3a8a;
+}
+
+h3, h4, p {
+    color: #374151;
+}

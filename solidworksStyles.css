@@ -16,9 +16,16 @@ body {
     height: 100vh;
     overflow-x: hidden;
 }
+h2{
+    margin-left: 20px;
+}
 a{
     text-decoration: none;
     color:black;
+}
+p{
+
+    font-weight: 600;
 }
 .nav li {
     display: inline-block;
@@ -94,6 +101,26 @@ a{
     margin: auto;
     text-align: center;
 }
+#woodpecker{
+    padding-left:200px;
+    padding-right:200px;
+    padding-top: 20px;
+    background-color: rgb(220, 237, 252);
+}
+.overview{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(227, 241, 255);
+    gap: 20px;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 @media (max-width: 1060px){
     .hideOnMobile{
         display: none;
@@ -101,8 +128,29 @@ a{
     .menu-button{
         display: block;
     }
+    #woodpecker{
+        padding-left:100px;
+        padding-right:100px;
+    }
 }
+@media(max-width:800px){
+    #woodpecker{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media(max-width: 650px){
 
+    .overview{
+    display: block;
+    justify-content: center;
+    }
+    #woodpecker-image{
+        display: block;
+        margin: auto;
+    }
+
+}
 @media (max-width: 400px)
 {
     .sidebar{
